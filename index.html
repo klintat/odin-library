@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My library</h1>
+            <button type="button" id="open">+ New book</button>
+        </div>
+        <!-- ----------Modal---------- -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <form class="new-book-container" action="" method="">
+                    <span class="close">&times;</span>
+                    <h2>Info about the book</h2>
+                    <div class="book-info-container">
+                        <input type="text" id="title" name="title" placeholder="Book title">
+                        <input type="text" id="author" name="author" placeholder="Author">
+                        <input type="number" id="pages" name="pages" placeholder="Pages" min="0">
+                    </div>
+
+                    <h2>Have you read the book?</h2>
+                    <div class="btn-radio">
+                        <input type="radio" id="read-yes" name="read" value="yes" />
+                        <label for="read-yes">Yes</label>
+                        <input type="radio" id="read-no" name="read" value="no" />
+                        <label for="read-no">No</label>
+                    </div>
+                    <div>
+                        <button type="button" id="btn-add" class="btn-add" >+ Add book</button>
+                    </div>
+                </form>   
+            </div>
+        </div>
+        <!-- ------------------------- -->
+        <div class="main-content">
+            <div class="cards-container" id="book-layout">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
